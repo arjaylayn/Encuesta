@@ -1,0 +1,421 @@
+/* ------------------ GENERAL ------------------ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Primary*/
+    --Orange: hsl(25, 97%, 53%);
+
+    /*Neutral*/
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Easy-Dark-Blue: hsl(211, 23%, 21%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body{
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    background-color: var(--Very-Dark-Blue);
+}
+
+/* ------------------ CARD ------------------ */
+.tarjeta{
+    width: 350px;
+    height: 380px;
+    margin: 50px auto;
+    border-radius: 15px;
+    border: 1px solid var(--Dark-Blue);
+    background-color: var(--Dark-Blue);
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------ CARD 1 ------------------ */
+.tarjeta__contenido1{
+    display: flex; /*c*/
+    flex-direction: column;
+    width: 300px;
+    height: 320px;
+    margin: 30px auto;
+}
+
+/* ------------------ CARD 1-ESTRELLA ------------------ */
+.tarjeta__contenido1__logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Easy-Dark-Blue);
+    margin-bottom: 18px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+}
+.tarjeta__contenido1__logo__imagen{
+    width: 40%;
+    height: 40%;
+}
+
+/* ------------------ CARD 1-CONTENIDO ------------------ */
+.tarjeta__contenido1__titulo{
+    font-size: 1.5em;
+    margin-bottom: 18px;
+    color: var(--White);
+}
+.tarjeta__contenido1__parrafo{
+    font-size: 0.9em;
+    margin-bottom: 30px;
+    color: var(--Medium-Grey);
+    font-weight: bold;
+    line-height: 1.5; 
+}
+
+/* ------------------ CARD 1-OPCIONES ------------------ */
+.opciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 18px;
+
+}
+/* ------------------ CARD 1-OPCIONES-1 ------------------ */
+.op1{
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Easy-Dark-Blue);
+    margin-bottom: 18px;
+    cursor: pointer;
+    color: var(--Light-Grey);
+    text-align: center;
+    border: 1px solid var(--Easy-Dark-Blue);
+}
+
+.op1:hover{
+    background-color: var(--Light-Grey);
+    color: var(--White);
+}
+
+.op1:focus{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+/* ------------------ CARD 1-OPCIONES-2 ------------------ */
+
+.op2{
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Easy-Dark-Blue);
+    margin-bottom: 18px;
+    cursor: pointer;
+    color: var(--Light-Grey);
+    text-align: center;
+    border: 1px solid var(--Easy-Dark-Blue);
+}
+
+.op2:hover{
+    background-color: var(--Light-Grey);
+    color: var(--White);
+}
+
+.op2:focus{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+/* ------------------ CARD 1-OPCIONES-3 ------------------ */
+
+.op3{
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Easy-Dark-Blue);
+    margin-bottom: 18px;
+    cursor: pointer;
+    color: var(--Light-Grey);
+    text-align: center;
+    border: 1px solid var(--Easy-Dark-Blue);
+}
+
+.op3:hover{
+    background-color: var(--Light-Grey);
+    color: var(--White);
+}
+
+.op3:focus{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+/* ------------------ CARD 1-OPCIONES-4 ------------------ */
+
+.op4{
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Easy-Dark-Blue);
+    margin-bottom: 18px;
+    cursor: pointer;
+    color: var(--Light-Grey);
+    text-align: center;
+    border: 1px solid var(--Easy-Dark-Blue);
+}
+
+.op4:hover{
+    background-color: var(--Light-Grey);
+    color: var(--White);
+}
+
+.op4:focus{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+/* ------------------ CARD 1-OPCIONES-5 ------------------ */
+
+.op5{
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Easy-Dark-Blue);
+    margin-bottom: 18px;
+    cursor: pointer;
+    color: var(--Light-Grey);
+    text-align: center;
+    border: 1px solid var(--Easy-Dark-Blue);
+    position: relative;
+}
+
+.op5:hover{
+    background-color: var(--Light-Grey);
+    color: var(--White);
+}
+
+.op5:focus{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+/* ------------------ CARD 1-BOTON RE ------------------ */
+.boton{
+    width: 100%;
+    border-radius: 25px;
+    background-color: var(--Orange);
+    color: var(--White);
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+}
+.boton:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+}
+/* ------------------ CARD 2 ------------------ */
+.tarjeta__contenido2{
+    display: none; /*c*/
+    flex-direction: column;
+    width: 300px;
+    height: 320px;
+    margin: 30px auto;
+    align-items: center;
+    text-align: center;
+    
+}
+.tarjeta__contenido2__imagen{
+    
+    width: 50%;
+    margin-bottom: 30px;
+}
+/* ------------------ CARD 2-RESULTADO ------------------ */
+.resultado{
+    padding: 10px 25px;
+    border-radius: 25px;
+    background-color: var(--Easy-Dark-Blue);
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+}
+.resultado__texto{
+    color: var(--Orange);
+    font-weight: bold;
+}
+/* ------------------ CARD 2-CONTENIDO ------------------ */
+.tarjeta__contenido2__titulo{
+    color: var(--White);
+    margin-top: 30px;
+    margin-bottom: 18px;
+}
+.tarjeta__contenido2__texto{
+    line-height: 20px;
+    color: var(--Light-Grey);
+    font-weight: bold;
+}
+.show{
+    display: flex;
+}
+.noshow{
+    display: none;
+}
+/* ------------------ FOOTER ------------------ */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.attribution{
+    padding-top: 100px;
+}
+
+/* ------------------ MEDIA ------------------ */
+@media screen and (min-width: 600px) {
+    .tarjeta{
+        width: 598px;
+        height: 600px;
+        margin: 50px auto;
+        border-radius: 15px;
+    }
+    /* ------------------ CARD 1 ------------------ */
+    .tarjeta__contenido1{
+        display: flex; /*c*/
+        flex-direction: column;
+        
+        width: 500px;
+        height: 530px;
+        margin: 30px auto;
+    }
+        /* ------------------ CARD 1-ESTRELLA ------------------ */
+    .tarjeta__contenido1__logo{
+        
+        width: 60px;
+        height: 60px;
+        margin-bottom: 45px;
+    }
+    /* ------------------ CARD 1-CONTENIDO ------------------ */
+    .tarjeta__contenido1__titulo{
+        font-size: 2.4em;
+        margin-bottom: 25px;
+    }
+    .tarjeta__contenido1__parrafo{
+        font-size: 1.6em;
+        margin-bottom: 50px;
+    }
+
+    /* ------------------ CARD 1-OPCIONES ------------------ */
+    .opciones{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    /* ------------------ CARD 1-OPCIONES-1 ------------------ */
+    
+    .op1{
+        width: 70px;
+        height: 70px;
+    }
+    /* ------------------ CARD 1-OPCIONES-2 ------------------ */
+
+    .op2{
+        width: 70px;
+        height: 70px;
+    }
+
+    /* ------------------ CARD 1-OPCIONES-3 ------------------ */
+
+    .op3{
+        width: 70px;
+        height: 70px;
+    }
+
+    /* ------------------ CARD 1-OPCIONES-4 ------------------ */
+
+    .op4{
+        width: 70px;
+        height: 70px;
+    }
+
+    /* ------------------ CARD 1-OPCIONES-5 ------------------ */
+
+    .op5{
+        width: 70px;
+        height: 70px;
+    }
+
+    /* ------------------ CARD 1-BOTON RE ------------------ */
+    .boton{
+        width: 100%;
+        border-radius: 25px;
+        background-color: var(--Orange);
+        color: var(--White);
+        padding: 15px;
+        border: none;
+        font-size: 1.5em;
+    }
+
+
+    /* ------------------ CARD 2 ------------------ */
+    .tarjeta__contenido2{
+        display: none; /*c*/
+        flex-direction: column;
+        
+        width: 500px;
+        height: 530px;
+        margin: 30px auto;
+    }
+    .tarjeta__contenido2__imagen{
+        margin-top: 35px;
+        width: 60%;
+        margin-bottom: 30px;
+    }
+    /* ------------------ CARD 2-RESULTADO ------------------ */
+    .resultado{
+        
+        padding: 13px 40px;
+        border-radius: 25px;
+        
+    }
+    .resultado__texto{
+        color: var(--Orange);
+        font-size: 1.5em;
+    }
+    /* ------------------ CARD 2-CONTENIDO ------------------ */
+    .tarjeta__contenido2__titulo{
+        margin-top: 30px;
+        margin-bottom: 18px;
+        font-size: 3em;
+    }
+    .tarjeta__contenido2__texto{
+        line-height: 30px;
+        font-size: 1.5em;
+    }
+    .show{
+        display: flex;
+    }
+    .noshow{
+        display: none;
+    }
+}
